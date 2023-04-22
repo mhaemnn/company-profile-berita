@@ -5,3 +5,82 @@
   padding: 0;
   margin: 0;
 }
+*, html, body {
+margin: 0;
+padding: 0;
+font-family: "roboto" , sans-serif;
+}
+
+.fContainer {
+display: flex;
+justify-content: center;
+width: 100%;
+height: 100vh;
+background-color: lightslategray;
+}
+
+.wrapper {
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+align-items: center;
+padding: 15px;
+width: 800px;
+height: 80px;
+background-color: rgb(24, 26, 26);
+box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0,5);
+}
+
+.brand {
+display: flex;
+font-size: 1.5em;
+flex-direction: row;
+padding-left: 4px;
+text-transform: capitalize;
+}
+
+.firstname{
+color: white;
+font-weight: 900;
+}
+
+.lastname{
+color: crimson;
+padding-left: 4px;
+font-weight: 900;
+}
+
+.navigation{
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.navigation>li {
+list-style-type: none;
+padding: 15px;
+}
+
+.navigation>li>a:hover {
+color: crimson;
+transition: all .3s ease-in-out;
+}
+
+.active:hover{
+color: white !important;
+}
+
+.navigation>li>a {
+color: white;
+font-size: 20px;
+text-decoration: none;
+text-transform: capitalize;
+}
+
+.active {   
+background-color: crimson;
+color: white;
+padding: 15px;
+}
+
