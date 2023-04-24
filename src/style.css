@@ -247,22 +247,22 @@ body {
 }
 
 .service-12 .btn-info-gradiant {
-  background: #975c04;
+  background: #ff9800;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #975c04 0%,
+    #ff9800 0%,
     #ff9800 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#975c04),
+    from(#ff9800),
     to(#ff9800)
   );
-  background: -webkit-linear-gradient(left, #975c04 0%, #ff9800 100%);
-  background: -o-linear-gradient(left, #975c04 0%, #ff9800 100%);
-  background: linear-gradient(to right, #975c04 0%, #ff9800 100%);
+  background: -webkit-linear-gradient(left, #ff9800 0%, #ff9800 100%);
+  background: -o-linear-gradient(left, #ff9800 0%, #ff9800 100%);
+  background: linear-gradient(to right, #ff9800 0%, #ff9800 100%);
 }
 
 .service-12 .btn-info-gradiant:hover {
@@ -270,18 +270,18 @@ body {
   background: -webkit-linear-gradient(
     legacy-direction(to right),
     #ff9800 0%,
-    #975c04 100%
+    #ff9800 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
     from(#ff9800),
-    to(#975c04)
+    to(#ff9800)
   );
-  background: -webkit-linear-gradient(left, #ff9800 0%, #975c04 100%);
-  background: -o-linear-gradient(left, #ff9800 0%, #975c04 100%);
-  background: linear-gradient(to right, #ff9800 0%, #975c04 100%);
+  background: -webkit-linear-gradient(left, #ff9800 0%, #ff9800 100%);
+  background: -o-linear-gradient(left, #ff9800 0%, #ff9800 100%);
+  background: linear-gradient(to right, #ff9800 0%, #ff9800 100%);
 }
 
 .service-12 .btn-md {
