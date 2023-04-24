@@ -108,7 +108,7 @@ body {
 }
 
 .slider .slide .info h2 {
-  background-color: yellow;
+  background-color: #ff9800;
   color: black;
   font-size: 3em;
   font-weight: 800;
@@ -128,7 +128,7 @@ body {
   border: none;
   padding: 12px;
   margin-top: 10px;
-  box-shadow: 0px 5px 0px yellow;
+  box-shadow: 0px 5px 0px #ff9800;
 }
 
 .navigation {
@@ -185,7 +185,7 @@ body {
 }
 
 .navigation-visibility .slide-icon.active {
-  background: yellow;
+  background: #ff9800;
 }
 
 /* ----------------------
