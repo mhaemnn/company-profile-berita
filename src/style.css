@@ -25,8 +25,8 @@ body {
   height: 50px;
   align-items: center;
 }
-.header .logo {
-  font-size: 22px;
+.header .logo img {
+  width: 150px;
   color: white;
   text-decoration: none;
 }
