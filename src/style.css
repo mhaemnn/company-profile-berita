@@ -10,6 +10,7 @@ body {
   height: 100vh;
   width: 100%;
 }
+/* navbar */
 .header {
   background-color: #eeeeee;
   width: 100%;
@@ -49,7 +50,7 @@ body {
 #btn-menu {
   display: none;
 }
-
+/* banner slider */
 .slider {
   position: relative;
   width: 100%;
@@ -96,11 +97,13 @@ body {
 }
 
 .slider .slide .info h2 {
+  color: white;
   font-size: 2em;
   font-weight: 800;
 }
 
 .slider .slide .info p {
+  color: white;
   font-size: 1em;
   font-weight: 400;
 }
@@ -112,7 +115,7 @@ body {
   border: none;
   padding: 12px;
   margin-top: 10px;
-  box-shadow: 0px 5px 0px yellow;;
+  box-shadow: 0px 5px 0px yellow;
 }
 
 .navigation {
@@ -156,7 +159,7 @@ body {
 
 .navigation-visibility .slide-icon {
   z-index: 999;
-  background:black;
+  background: black;
   width: 20px;
   height: 20px;
   transform: translateY(-50px);
