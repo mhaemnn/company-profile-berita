@@ -53,6 +53,7 @@ body {
 /* banner slider */
 .slider {
   position: relative;
+  text-align: center;
   width: 100%;
   min-height: 500px;
   margin-top: 70px;
@@ -87,24 +88,36 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
 .row {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .column {
-  flex: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  max-width: 50%;
+}
+.column img {
+  margin-left: 50px;
 }
 
 .slider .slide .info h2 {
-  color: white;
-  font-size: 2em;
+  background-color: #ff9800;
+  color: black;
+  font-size: 3em;
   font-weight: 800;
 }
 
 .slider .slide .info p {
+  background-color: #444;
   color: white;
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: 400;
 }
 
@@ -115,7 +128,7 @@ body {
   border: none;
   padding: 12px;
   margin-top: 10px;
-  box-shadow: 0px 5px 0px yellow;
+  box-shadow: 0px 5px 0px #ff9800;
 }
 
 .navigation {
@@ -155,6 +168,8 @@ body {
   z-index: 999;
   display: flex;
   justify-content: center;
+  position: relative;
+  bottom: -40px;
 }
 
 .navigation-visibility .slide-icon {
@@ -170,7 +185,7 @@ body {
 }
 
 .navigation-visibility .slide-icon.active {
-  background: yellow;
+  background: #ff9800;
 }
 
 /* ----------------------
@@ -198,7 +213,7 @@ body {
     transform: translateY(-50%);
     right: 20px;
     font-size: 22px;
-    color: #ba3b0a;
+    color: #ff9800;
     width: 40px;
     height: 35px;
     text-align: center;
