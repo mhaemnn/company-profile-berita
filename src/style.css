@@ -212,7 +212,7 @@ body {
 }
 
 .service-12 .badge-info {
-  background: #188ef4;
+  background: #ff9800;
 }
 
 .service-12 .subtitle {
@@ -247,41 +247,41 @@ body {
 }
 
 .service-12 .btn-info-gradiant {
-  background: #188ef4;
+  background: #975c04;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #188ef4 0%,
-    #316ce8 100%
+    #975c04 0%,
+    #ff9800 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#188ef4),
-    to(#316ce8)
+    from(#975c04),
+    to(#ff9800)
   );
-  background: -webkit-linear-gradient(left, #188ef4 0%, #316ce8 100%);
-  background: -o-linear-gradient(left, #188ef4 0%, #316ce8 100%);
-  background: linear-gradient(to right, #188ef4 0%, #316ce8 100%);
+  background: -webkit-linear-gradient(left, #975c04 0%, #ff9800 100%);
+  background: -o-linear-gradient(left, #975c04 0%, #ff9800 100%);
+  background: linear-gradient(to right, #975c04 0%, #ff9800 100%);
 }
 
 .service-12 .btn-info-gradiant:hover {
-  background: #316ce8;
+  background: #ff9800;
   background: -webkit-linear-gradient(
     legacy-direction(to right),
-    #316ce8 0%,
-    #188ef4 100%
+    #ff9800 0%,
+    #975c04 100%
   );
   background: -webkit-gradient(
     linear,
     left top,
     right top,
-    from(#316ce8),
-    to(#188ef4)
+    from(#ff9800),
+    to(#975c04)
   );
-  background: -webkit-linear-gradient(left, #316ce8 0%, #188ef4 100%);
-  background: -o-linear-gradient(left, #316ce8 0%, #188ef4 100%);
-  background: linear-gradient(to right, #316ce8 0%, #188ef4 100%);
+  background: -webkit-linear-gradient(left, #ff9800 0%, #975c04 100%);
+  background: -o-linear-gradient(left, #ff9800 0%, #975c04 100%);
+  background: linear-gradient(to right, #ff9800 0%, #975c04 100%);
 }
 
 .service-12 .btn-md {
