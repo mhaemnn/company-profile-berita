@@ -294,6 +294,36 @@ body {
 }
 
 /* gellery / our work */
+h2#horizontal {
+  text-align: center;
+  text-transform: uppercase;
+}
+#horizontal {
+  background-image: linear-gradient(
+    to right,
+    red,
+    orange,
+    yellow,
+    green,
+    blue,
+    purple
+  );
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
 .box {
   display: flex;
   width: 100%;
