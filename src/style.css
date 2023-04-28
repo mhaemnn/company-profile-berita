@@ -498,6 +498,27 @@ img {
   grid-row-end: span 3;
 }
 
+/* our client */
+.logo-client {
+  width: 100%;
+}
+
+.container-logo {
+  max-width: 1040px;
+  margin: 100px auto;
+}
+
+
+.logo-slider .slick-slide {
+  margin: 20px;
+}
+
+
+.slick-next:before, .slick-prev:before {
+  color:#ff8159 !important;
+}
+
+
 /* ----------------------
   version mobile
 ------------------------- */
