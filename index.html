@@ -1,558 +1,581 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>webkit</title>
+    <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon" />
+    <!-- import bootstrap online -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous" />
+    <!-- icon fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="src/style.css" />
+    <!--cdn CSS carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>webkit</title>
-  <link rel="icon" href="src/assets/favicon.ico" type="image/x-icon" />
-  <!-- import bootstrap online -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <!-- icon fontawesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
-  <!-- style CSS -->
-  <link rel="stylesheet" href="src/style.css" />
-  <!--cdn CSS carousel -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
-</head>
-
-<body>
-  <!-- navbar -->
-  <div class="header">
-    <i id="btn-menu" class="fa-solid fa-bars"></i>
-    <div class="contanier">
-      <a href="" class="logo"><img src="/src/assets/logo3.png" alt="" /></a>
-      <div id="menu" class="nav-links">
-        <a href="#">Home</a>
-        <a href="#">portfolio</a>
-        <a href="#">blog</a>
-        <a href="#">about us</a>
-        <a href="#">todos</a>
-      </div>
-    </div>
-  </div>
-  <!-- banner/slideshow -->
-  <div class="slider">
-    <div class="slide active">
-      <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
-      <div class="info">
-        <div class="row">
-          <div class="column">
-            <h2 class="title-one">WE BELIEVE</h2>
-            <h2 class="title-two">IN QUALITY DESIGN</h2>
-            <p>Any Creative Project is Unique and should be provided with</p>
-            <button data-popup-target="#popup">Order Now</button>
-          </div>
-          <div class="column">
-            <img src="/src/assets/bgslide.png" style="width: 550px" />
-          </div>
+  <body>
+    <!-- navbar -->
+    <div class="header">
+      <i id="btn-menu" class="fa-solid fa-bars"></i>
+      <div class="contanier">
+        <a href="" class="logo"><img src="/src/assets/logo3.png" alt="" /></a>
+        <div id="menu" class="nav-links">
+          <a href="#">Home</a>
+          <a href="#">portfolio</a>
+          <a href="#">blog</a>
+          <a href="#">about us</a>
+          <a href="#">todos</a>
         </div>
       </div>
     </div>
-    <div class="slide">
-      <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
-      <div class="info">
-        <div class="row">
-          <div class="column">
-            <h2 class="title-one">WE BELIEVE</h2>
-            <h2 class="title-two">IN QUALITY DESIGN</h2>
-            <p>Any Creative Project is Unique and should be provided with</p>
-            <button data-popup-target="#popup">Order Now</button>
-          </div>
-          <div class="column">
-            <img src="/src/assets/bgslide.png" style="width: 550px" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
-      <div class="info">
-        <div class="row">
-          <div class="column">
-            <h2 class="title-one">WE BELIEVE</h2>
-            <h2 class="title-two">IN QUALITY DESIGN</h2>
-            <p>Any Creative Project is Unique and should be provided with</p>
-            <button data-popup-target="#popup">Order Now</button>
-          </div>
-          <div class="column">
-            <img src="/src/assets/bgslide.png" style="width: 550px" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
-      <div class="info">
-        <div class="row">
-          <div class="column">
-            <h2 class="title-one">WE BELIEVE</h2>
-            <h2 class="title-two">IN QUALITY DESIGN</h2>
-            <p>Any Creative Project is Unique and should be provided with</p>
-            <button data-popup-target="#popup">Order Now</button>
-          </div>
-          <div class="column">
-            <img src="/src/assets/bgslide.png" style="width: 550px" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
-      <div class="info">
-        <div class="row">
-          <div class="column">
-            <h2 class="title-one">WE BELIEVE</h2>
-            <h2 class="title-two">IN QUALITY DESIGN</h2>
-            <p>Any Creative Project is Unique and should be provided with</p>
-            <button data-popup-target="#popup">Order Now</button>
-          </div>
-          <div class="column">
-            <img src="/src/assets/bgslide.png" style="width: 550px" />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="navigation">
-      <i class="fas fa-chevron-left prev-btn"></i>
-      <i class="fas fa-chevron-right next-btn"></i>
-    </div>
-    <div class="navigation-visibility">
-      <div class="slide-icon active"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-      <div class="slide-icon"></div>
-    </div>
-  </div>
-
-  <!-- popup screen -->
-  <div class="popup" id="popup">
-    <button data-close-button class="close-button">&times;</button>
-    <table>
-      <thead>
-        <tr>
-          <th class="offer">
-            <h3>Plan Features</h3>
-          </th>
-          <th class="offer">
-            <h3>Basic</h3>
-            <h4>$5<small>/month</small></h4>
-          </th>
-          <th class="offer">
-            <h3>Economy</h3>
-            <h4>$9<small>/month</small></h4>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td class="offer-list">Web Space</td>
-          <td class="offer-price">Unlimited</td>
-          <td class="offer-price">Unlimited</td>
-        </tr>
-        <tr>
-          <td class="offer-list">Bandwidth</td>
-          <td class="offer-price">Unlimited</td>
-          <td class="offer-price">Unlimited</td>
-        </tr>
-        <tr>
-          <td class="offer-list">25 GB Storage</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-xmark"></i>
-          </td>
-          <td class="offer-price">Unlimited</td>
-        </tr>
-        <tr>
-          <td class="offer-list">iPhone App</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-xmark"></i>
-          </td>
-          <td class="offer-price">Unlimited</td>
-        </tr>
-        <tr>
-          <td class="offer-list">Enhanced Security</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="offer-list">E-mail</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="offer-list">Wordpress Support</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-xmark"></i>
-          </td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="offer-list">24/7 Support</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="offer-list">Backups</td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-          <td class="offer-price">
-            <i class="fa-solid fa-check"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="offer-list">Dedicated IP</td>
-          <td class="offer-price">$2/mo</td>
-          <td class="offer-price">$2/mo</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td class="offer-list"></td>
-          <td class="offer-price">
-            <button class="order-now">Order Now</button>
-          </td>
-          <td class="offer-price">
-            <button class="order-now">Order Now</button>
-          </td>
-        </tr>
-      </tfoot>
-    </table>
-  </div>
-  <div id="overlay"></div>
-
-  <!-- services -->
-  <div class="py-5 service-12">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6">
-          <span class="badge badge-info rounded-pill px-3 py-1 font-weight-light">Service 12</span>
-          <h4 class="my-3">
-            Awesome with Extra Ordinary Flexibility Features
-          </h4>
-          <h6 class="font-weight-light subtitle">
-            You can relay on our amazing features list and also our customer
-            services will be great experience for you without doubt and in
-            no-time
-          </h6>
+    <!-- banner/slideshow -->
+    <div class="slider">
+      <div class="slide active">
+        <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
+        <div class="info">
           <div class="row">
-            <div class="col-md-6 mt-3">
-              <h6 class="font-weight-medium">Web Development</h6>
-              <p>
-                You can relay on our amazing features list and also our
-                customer services will.
-              </p>
+            <div class="column">
+              <h2 class="title-one">WE BELIEVE</h2>
+              <h2 class="title-two">IN QUALITY DESIGN</h2>
+              <p>Any Creative Project is Unique and should be provided with</p>
+              <button data-popup-target="#popup">Order Now</button>
             </div>
-            <div class="col-md-6 mt-3">
-              <h6 class="font-weight-medium">Web Design</h6>
-              <p>
-                You can relay on our amazing features list and also our
-                customer services will.
-              </p>
-            </div>
-            <div class="col-md-6 mt-3">
-              <h6 class="font-weight-medium">Graphic Design</h6>
-              <p>
-                You can relay on our amazing features list and also our
-                customer services will.
-              </p>
-            </div>
-            <div class="col-md-6 mt-3">
-              <h6 class="font-weight-medium">Game Development</h6>
-              <p>
-                You can relay on our amazing features list and also our
-                customer services will.
-              </p>
-            </div>
-            <div class="col-lg-12 my-4">
-              <a class="btn btn-info-gradiant btn-md border-0 text-white" href="#f12"><span>Learn More</span></a>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-6">
-          <div class="row wrap-service12">
-            <div class="col-md-6">
-              <div class="row">
-                <div class="col-md-12 img-hover mb-4">
-                  <img src="src/assets/service1.png" class="rounded img-shadow img-fluid" alt="wrapkit" />
-                </div>
-                <div class="col-md-12 img-hover mb-4">
-                  <img src="src/assets/service2.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" />
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 uneven-box">
-              <div class="row">
-                <div class="col-md-12 img-hover mb-4">
-                  <img src="src/assets/service3.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" />
-                </div>
-                <div class="col-md-12 img-hover mb-4">
-                  <img src="src/assets/service4.jpg" class="rounded img-shadow img-fluid" alt="wrapkit" />
-                </div>
-              </div>
+            <div class="column">
+              <img src="/src/assets/bgslide.png" style="width: 550px" />
             </div>
           </div>
         </div>
       </div>
+      <div class="slide">
+        <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
+        <div class="info">
+          <div class="row">
+            <div class="column">
+              <h2 class="title-one">WE BELIEVE</h2>
+              <h2 class="title-two">IN QUALITY DESIGN</h2>
+              <p>Any Creative Project is Unique and should be provided with</p>
+              <button data-popup-target="#popup">Order Now</button>
+            </div>
+            <div class="column">
+              <img src="/src/assets/bgslide.png" style="width: 550px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
+        <div class="info">
+          <div class="row">
+            <div class="column">
+              <h2 class="title-one">WE BELIEVE</h2>
+              <h2 class="title-two">IN QUALITY DESIGN</h2>
+              <p>Any Creative Project is Unique and should be provided with</p>
+              <button data-popup-target="#popup">Order Now</button>
+            </div>
+            <div class="column">
+              <img src="/src/assets/bgslide.png" style="width: 550px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
+        <div class="info">
+          <div class="row">
+            <div class="column">
+              <h2 class="title-one">WE BELIEVE</h2>
+              <h2 class="title-two">IN QUALITY DESIGN</h2>
+              <p>Any Creative Project is Unique and should be provided with</p>
+              <button data-popup-target="#popup">Order Now</button>
+            </div>
+            <div class="column">
+              <img src="/src/assets/bgslide.png" style="width: 550px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slide">
+        <img src="/src/assets/bg.jpg" alt="" id="blur-bg" />
+        <div class="info">
+          <div class="row">
+            <div class="column">
+              <h2 class="title-one">WE BELIEVE</h2>
+              <h2 class="title-two">IN QUALITY DESIGN</h2>
+              <p>Any Creative Project is Unique and should be provided with</p>
+              <button data-popup-target="#popup">Order Now</button>
+            </div>
+            <div class="column">
+              <img src="/src/assets/bgslide.png" style="width: 550px" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navigation">
+        <i class="fas fa-chevron-left prev-btn"></i>
+        <i class="fas fa-chevron-right next-btn"></i>
+      </div>
+      <div class="navigation-visibility">
+        <div class="slide-icon active"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+        <div class="slide-icon"></div>
+      </div>
     </div>
 
-  </div>
+    <!-- popup screen -->
+    <div class="popup" id="popup">
+      <button data-close-button class="close-button">&times;</button>
+      <table>
+        <thead>
+          <tr>
+            <th class="offer">
+              <h3>Plan Features</h3>
+            </th>
+            <th class="offer">
+              <h3>Basic</h3>
+              <h4>$5<small>/month</small></h4>
+            </th>
+            <th class="offer">
+              <h3>Economy</h3>
+              <h4>$9<small>/month</small></h4>
+            </th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="offer-list">Web Space</td>
+            <td class="offer-price">Unlimited</td>
+            <td class="offer-price">Unlimited</td>
+          </tr>
+          <tr>
+            <td class="offer-list">Bandwidth</td>
+            <td class="offer-price">Unlimited</td>
+            <td class="offer-price">Unlimited</td>
+          </tr>
+          <tr>
+            <td class="offer-list">25 GB Storage</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-xmark"></i>
+            </td>
+            <td class="offer-price">Unlimited</td>
+          </tr>
+          <tr>
+            <td class="offer-list">iPhone App</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-xmark"></i>
+            </td>
+            <td class="offer-price">Unlimited</td>
+          </tr>
+          <tr>
+            <td class="offer-list">Enhanced Security</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="offer-list">E-mail</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="offer-list">Wordpress Support</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-xmark"></i>
+            </td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="offer-list">24/7 Support</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="offer-list">Backups</td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+            <td class="offer-price">
+              <i class="fa-solid fa-check"></i>
+            </td>
+          </tr>
+          <tr>
+            <td class="offer-list">Dedicated IP</td>
+            <td class="offer-price">$2/mo</td>
+            <td class="offer-price">$2/mo</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="offer-list"></td>
+            <td class="offer-price">
+              <button class="order-now">Order Now</button>
+            </td>
+            <td class="offer-price">
+              <button class="order-now">Order Now</button>
+            </td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+    <div id="overlay"></div>
 
-  <!-- horizontal -->
-  <h2 id="horizontal">our work</h2>
-  <div class="box">
-    <div class="box-sm red"></div>
-    <div class="box-sm orange"></div>
-    <div class="box-sm yellow"></div>
-    <div class="box-sm green"></div>
-    <div class="box-sm blue"></div>
-    <div class="box-sm purple"></div>
-  </div>
-  <!-- gallery -->
-  <div class="gallery">
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery0.jpg" />
+    <!-- services -->
+    <div class="py-5 service-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <span
+              class="badge badge-info rounded-pill px-3 py-1 font-weight-light"
+              >Service 12</span
+            >
+            <h4 class="my-3">
+              Awesome with Extra Ordinary Flexibility Features
+            </h4>
+            <h6 class="font-weight-light subtitle">
+              You can relay on our amazing features list and also our customer
+              services will be great experience for you without doubt and in
+              no-time
+            </h6>
+            <div class="row">
+              <div class="col-md-6 mt-3">
+                <h6 class="font-weight-medium">Web Development</h6>
+                <p>
+                  You can relay on our amazing features list and also our
+                  customer services will.
+                </p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <h6 class="font-weight-medium">Web Design</h6>
+                <p>
+                  You can relay on our amazing features list and also our
+                  customer services will.
+                </p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <h6 class="font-weight-medium">Graphic Design</h6>
+                <p>
+                  You can relay on our amazing features list and also our
+                  customer services will.
+                </p>
+              </div>
+              <div class="col-md-6 mt-3">
+                <h6 class="font-weight-medium">Game Development</h6>
+                <p>
+                  You can relay on our amazing features list and also our
+                  customer services will.
+                </p>
+              </div>
+              <div class="col-lg-12 my-4">
+                <a
+                  class="btn btn-info-gradiant btn-md border-0 text-white"
+                  href="#f12"
+                  ><span>Learn More</span></a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="row wrap-service12">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-md-12 img-hover mb-4">
+                    <img
+                      src="src/assets/service1.png"
+                      class="rounded img-shadow img-fluid"
+                      alt="wrapkit" />
+                  </div>
+                  <div class="col-md-12 img-hover mb-4">
+                    <img
+                      src="src/assets/service2.jpg"
+                      class="rounded img-shadow img-fluid"
+                      alt="wrapkit" />
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 uneven-box">
+                <div class="row">
+                  <div class="col-md-12 img-hover mb-4">
+                    <img
+                      src="src/assets/service3.jpg"
+                      class="rounded img-shadow img-fluid"
+                      alt="wrapkit" />
+                  </div>
+                  <div class="col-md-12 img-hover mb-4">
+                    <img
+                      src="src/assets/service4.jpg"
+                      class="rounded img-shadow img-fluid"
+                      alt="wrapkit" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery1.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery12.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--v-2">
-      <div class="embed embed--1-2">
-        <img src="src/assets/gallery2.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery13.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2">
-      <div class="embed embed--2-1">
-        <img src="src/assets/gallery3.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--v-2">
-      <div class="embed embed--1-2">
-        <img src="src/assets/gallery4.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2">
-      <div class="embed embed--2-1">
-        <img src="src/assets/gallery5.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--v-2">
-      <div class="embed embed--1-2">
-        <img src="src/assets/gallery6.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
-      <div class="embed">
-        <img src="src/assets/gallery7.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery8.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
-      <div class="embed">
-        <img src="src/assets/gallery9.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery10.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2 gallery__item--v-3">
-      <div class="embed embed--2-3">
-        <img src="src/assets/gallery11.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
-      <div class="embed">
-        <img src="src/assets/gallery14.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item gallery__item--v-2">
-      <div class="embed embed--1-2">
-        <img src="src/assets/gallery15.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery16.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery17.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery18.jpg" />
-      </div>
-    </div>
-    <div class="gallery__item">
-      <div class="embed">
-        <img src="src/assets/gallery19.jpg" />
-      </div>
-    </div>
-  </div>
-  </div>
 
-  <!-- our client -->
-  <h2 id="horizontal" style="margin-top: 100px;">our client</h2>
-  <div class="box">
-    <div class="box-sm red"></div>
-    <div class="box-sm orange"></div>
-    <div class="box-sm yellow"></div>
-    <div class="box-sm green"></div>
-    <div class="box-sm blue"></div>
-    <div class="box-sm purple"></div>
-  </div>
-  <div class="container-logo">
-    <div class="logo-slider">
-      <div class="logo-item"><img src="src/assets/client1.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client2.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client3.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client4.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client5.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client6.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client7.png" class="logo-client"></div>
-      <div class="logo-item"><img src="src/assets/client8.png" class="logo-client"></div>
+    <!-- horizontal -->
+    <h2 id="horizontal">our work</h2>
+    <div class="box">
+      <div class="box-sm red"></div>
+      <div class="box-sm orange"></div>
+      <div class="box-sm yellow"></div>
+      <div class="box-sm green"></div>
+      <div class="box-sm blue"></div>
+      <div class="box-sm purple"></div>
     </div>
-  </div>
-  
-  <!--footer-->
-  <footer class="footer">
-  <link rel="stylesheet" href="../webkit/src/footer.css">
-	<div class="footer-top">
-	   <div class="wrap">
-		   <div class="section group">
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>About Us</h3>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<button class="btn1 btn-8 btn-8b">Learn more</button>
-					<h4>Photo Stream</h4>
-					<div class="gallery">
-						<ul>
-							<li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g1.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g6.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g1.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g6.jpg" alt=""/></a></li>
-              <li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g1.jpg" alt=""/></a></li>
-							<li><a class="popup-with-zoom-anim" href="#"><img src="./src/assets/g6.jpg" alt=""/></a></li>
-							</div>
-						</ul>
-					</div>
-				</div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Latest tweets</h3>
-					<div class="footer-list">
-						<ul>
-							<li><img src="./src/assets/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="./src/assets/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="./src/assets/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="./src/assets/tw.png" alt=""/><p>Lorem ipsum dolor sit amet, <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, sed diam nonummy nibh<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-							<li><img src="./src/assets/tw.png" alt=""/><p>Lorem ipsum <span class="yellow"><a href="#">consectetuer</a></span> adipiscing elit, seddia<br><span class="small">&nbsp;web design</span></p><div class="clear"></div></li>
-						</ul>
-					</div>
-					 <div class="social-icons">	
-					 	<h4>Social Connecting</h4>
-							<div><img src="./src/assets/img-sprite.png" alt="" style="width: 100%;"></div>
-						    <ul>	
-							  <li class="facebook"><a href="#"><span> </span></a></li>
-					          <li class="google"><a href="#"><span> </span></a></li>
-					          <li class="twitter"><a href="#"><span> </span></a></li>
-					          <li class="Email"><a href="#"><span> </span></a></li>	 
-					          <li class="youtube"><a href="#"><span> </span></a></li>	
-					          <li class="bloger"><a href="#"><span> </span></a></li>
-					          <li class="TikTok"><a href="#"><span> </span></a></li>		        	
-					        </ul>
-				     </div>
-			    </div>
-				<div class="col_1_of_3 span_1_of_3">
-					<h3>Contact info</h3>
-					<div class="footer-list">
-						<ul>
-							<li><img src="./src/assets/address.png" alt=""/><p>Lorem ipsum dolor sit amet,consectetuer adipiscing elit, sed diam nonummy nibh<br>&nbsp;web design</p><div class="clear"></div></li>
-							<li><img src="./src/assets/phone.png" alt=""/><p>Phone: +1 800 258 2689<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+1 800 258 2689 </p><div class="clear"></div></li>
-							<li><img src="./src/assets/msg.png" alt=""/><p>Email: <span class="yellow"><a href="#">info(at)webkit.com</a></span></p><div class="clear"></div></li>
-					   </ul>
-					</div>
-					<div class="follow">
-					   <h4>Follow Us</h4>
-					   <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</p>
-					   <div class="search">
-						  <form>
-							   <input type="text" value="">
-							   <input type="submit" value="">
-						  </form>
-					   </div>
-				    </div>
-				</div>
-				<div class="clear"></div>
-			</div>
-	  </div>
-	 </div>
-	 <div class="footer-bottom">
-	 	<div class="wrap">
-		 	<div class="copy">
-			     <p class="copy">© 2020<a href="#" target="_blank">WEBKIT KELOMPOK 1 MSIB KAMPUS MENGAJAR 4</a></p>
-		    </div>
-		 	<div class="footer-nav">
-		 		<ul>
-					<li><a href="#">Home</a></li>
-					<li><a href="#">Portfolio</a></li> 
-					<li><a href="#">Blog</a></li> 
-					<li><a href="#">About Us</a></li> 
-					<li><a href="#">Contact</a></li>
-				</ul>
-		 	</div>
-	    </div>
-	</div>
-</footer>
+    <!-- gallery -->
+    <div class="gallery">
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery0.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery1.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery12.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--v-2">
+        <div class="embed embed--1-2">
+          <img src="src/assets/gallery2.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery13.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2">
+        <div class="embed embed--2-1">
+          <img src="src/assets/gallery3.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--v-2">
+        <div class="embed embed--1-2">
+          <img src="src/assets/gallery4.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2">
+        <div class="embed embed--2-1">
+          <img src="src/assets/gallery5.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--v-2">
+        <div class="embed embed--1-2">
+          <img src="src/assets/gallery6.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+        <div class="embed">
+          <img src="src/assets/gallery7.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery8.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+        <div class="embed">
+          <img src="src/assets/gallery9.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery10.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2 gallery__item--v-3">
+        <div class="embed embed--2-3">
+          <img src="src/assets/gallery11.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--h-2 gallery__item--v-2">
+        <div class="embed">
+          <img src="src/assets/gallery14.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item gallery__item--v-2">
+        <div class="embed embed--1-2">
+          <img src="src/assets/gallery15.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery16.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery17.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery18.jpg" />
+        </div>
+      </div>
+      <div class="gallery__item">
+        <div class="embed">
+          <img src="src/assets/gallery19.jpg" />
+        </div>
+      </div>
+    </div>
 
-  <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <!-- slick carousel -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-  <!-- import js online -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-    crossorigin="anonymous"></script>
-  <!-- script -->
-  <script src="src/scipt.js"></script>
-</body>
+    <!-- our client -->
+    <h2 id="horizontal" style="margin-top: 100px">our client</h2>
+    <div class="box">
+      <div class="box-sm red"></div>
+      <div class="box-sm orange"></div>
+      <div class="box-sm yellow"></div>
+      <div class="box-sm green"></div>
+      <div class="box-sm blue"></div>
+      <div class="box-sm purple"></div>
+    </div>
+    <div class="container-logo">
+      <div class="logo-slider">
+        <div class="logo-item">
+          <img src="src/assets/client1.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client2.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client3.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client4.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client5.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client6.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client7.png" class="logo-client" />
+        </div>
+        <div class="logo-item">
+          <img src="src/assets/client8.png" class="logo-client" />
+        </div>
+      </div>
+    </div>
 
+    <!--footer-->
+    <footer>
+      <div class="row primary">
+        <div class="column about">
+          <h3>Foolish Developer</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae,
+            voluptatem corporis error non,
+          </p>
+          <div class="social">
+            <i class="fa-brands fa-facebook-square"></i>
+            <i class="fa-brands fa-instagram-square"></i>
+            <i class="fa-brands fa-twitter-square"></i>
+            <i class="fa-brands fa-youtube-square"></i>
+            <i class="fa-brands fa-whatsapp-square"></i>
+          </div>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column links">
+          <h3>Some Links</h3>
+          <ul>
+            <li>
+              <a href="#faq">F.A.Q</a>
+            </li>
+            <li>
+              <a href="#cookies-policy">Cookies Policy</a>
+            </li>
+            <li>
+              <a href="#terms-of-services">Terms Of Service</a>
+            </li>
+            <li>
+              <a href="#support">Support</a>
+            </li>
+          </ul>
+        </div>
+        <div class="column subscribe">
+          <h3>Newsletter</h3>
+          <div>
+            <input type="email" placeholder="Your email id here" />
+            <button>Subscribe</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="row copyright">
+        <div class="footer-menu">
+          <a href="">Home</a>
+          <a href="">portfolio</a>
+          <a href="">blog</a>
+          <a href="">about us</a>
+          <a href="">todos</a>
+        </div>
+        <p>Copyright &copy; 2023 webkit technology</p>
+      </div>
+    </footer>
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- slick carousel -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+    <!-- import js online -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"></script>
+    <!-- script -->
+    <script src="src/scipt.js"></script>
+  </body>
 </html>
