@@ -193,6 +193,78 @@ body {
 .navigation-visibility .slide-icon.active {
   background: #ff9800;
 }
+
+/* popup screen */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  z-index: 10;
+  background-color: white;
+  padding: 25px;
+}
+
+.popup.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.close-button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.offer {
+  padding: 20px 20px;
+  border: 1px solid black;
+  background-color: #ff9800;
+  color: white;
+  text-align: center;
+  
+}
+
+.offer-list {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.offer-price {
+  padding: 10px;
+  border: 1px solid black;
+  text-align: center;
+  color: rgb(198, 198, 198);
+}
+
+.order-now {
+  border: none;
+  background-color: #252525;
+  color: white;
+  padding: 5px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+/* services */
 .service-12 h1,
 .service-12 h2,
 .service-12 h3,
