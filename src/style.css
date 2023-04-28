@@ -225,7 +225,6 @@ body {
   background-color: #ff9800;
   color: white;
   text-align: center;
-  
 }
 
 .offer-list {
@@ -255,7 +254,7 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, .5);
+  background-color: rgba(0, 0, 0, 0.5);
   pointer-events: none;
 }
 
@@ -499,25 +498,37 @@ img {
 }
 
 /* our client */
+.container-logo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.logo-slider {
+  display: flex;
+  animation: slide 10s linear infinite;
+}
+
+.logo-item {
+  flex-shrink: 0;
+  width: 150px;
+  height: 80px;
+  margin-right: 20px;
+}
+
 .logo-client {
   width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
-.container-logo {
-  max-width: 1040px;
-  margin: 100px auto;
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
-
-
-.logo-slider .slick-slide {
-  margin: 20px;
-}
-
-
-.slick-next:before, .slick-prev:before {
-  color:#ff8159 !important;
-}
-
 
 /* ----------------------
   version mobile
