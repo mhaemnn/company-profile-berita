@@ -21,7 +21,9 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
+
 .header .contanier {
   width: 80%;
   margin: auto;
@@ -113,6 +115,10 @@ body {
   margin-left: 50px;
 }
 
+.column .img-banner {
+  width: 550px !important;
+}
+
 .slider .slide .info h2 {
   background-color: #ff9800;
   color: black;
@@ -152,7 +158,6 @@ body {
 
 .prev-btn,
 .next-btn {
-  z-index: 999;
   font-size: 2em;
   color: white;
   background: black;
@@ -171,7 +176,6 @@ body {
 }
 
 .navigation-visibility {
-  z-index: 999;
   display: flex;
   justify-content: center;
   position: relative;
@@ -179,7 +183,6 @@ body {
 }
 
 .navigation-visibility .slide-icon {
-  z-index: 999;
   background: black;
   width: 20px;
   height: 20px;
@@ -201,9 +204,9 @@ body {
   left: 50%;
   transform: translate(-50%, -50%) scale(0);
   transition: 200ms ease-in-out;
-  z-index: 10;
+  z-index: 1000;
   background-color: white;
-  padding: 25px;
+  padding: 10px;
 }
 
 .popup.active {
@@ -437,7 +440,7 @@ h2#horizontal {
 .purple {
   background-color: #9e44c4;
 }
-img {
+.img-gallery {
   block-size: auto;
   max-inline-size: 100%;
   vertical-align: middle;
@@ -589,7 +592,7 @@ ul li a:hover {
   margin: 0;
 }
 input,
-button {
+.btn-sub {
   font-size: 1em;
   padding: 1em;
   width: 300px;
