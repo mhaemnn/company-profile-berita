@@ -100,45 +100,45 @@ function toggleForm() {
 }
 
 // popup screen
-const openPopupButtons = document.querySelectorAll('[data-popup-target]');
-const closeButtons = document.querySelectorAll('[data-close-button]');
-const overlay = document.getElementById('overlay');
+const openPopupButtons = document.querySelectorAll("[data-popup-target]");
+const closeButtons = document.querySelectorAll("[data-close-button]");
+const overlay = document.getElementById("overlay");
 
-openPopupButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const popup = document.querySelector(button.dataset.popupTarget)
-    openPopup(popup)
-  })
-})
+openPopupButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const popup = document.querySelector(button.dataset.popupTarget);
+    openPopup(popup);
+  });
+});
 
-overlay.addEventListener('click', () => {
-  const popup = document.querySelectorAll('.popup.active')
-  popup.forEach(popup => {
-    closePopup(popup)
-  })
-})
+overlay.addEventListener("click", () => {
+  const popup = document.querySelectorAll(".popup.active");
+  popup.forEach((popup) => {
+    closePopup(popup);
+  });
+});
 
-closeButtons.forEach(button => {
-  button.addEventListener('click', () => {
-    const popup = button.closest('.popup')
-    closePopup(popup)
-  })
-})
+closeButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    const popup = button.closest(".popup");
+    closePopup(popup);
+  });
+});
 
 function openPopup(popup) {
-  if (popup == null) return
-  popup.classList.add('active')
-  overlay.classList.add('active')
+  if (popup == null) return;
+  popup.classList.add("active");
+  overlay.classList.add("active");
 }
 
 function closePopup(popup) {
-  if (popup == null) return
-  popup.classList.remove('active')
-  overlay.classList.remove('active')
+  if (popup == null) return;
+  popup.classList.remove("active");
+  overlay.classList.remove("active");
 }
 
 // logo slider
-$('.logo-slider').slick({
+$(".logo-slider").slick({
   slidesToShow: 5,
   slidesToScroll: 1,
   dots: false,
@@ -146,28 +146,29 @@ $('.logo-slider').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   infinite: true,
-  responsive: [{
-          breakpoint: 1024,
-          settings: {
-              slidesToShow: 3,
-              slidesToScroll: 1,
-              infinite: true,
-              dots: false
-          }
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: false,
       },
-      {
-          breakpoint: 600,
-          settings: {
-              slidesToShow: 2,
-              slidesToScroll: 1
-          }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1,
       },
-      {
-          breakpoint: 480,
-          settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-          }
-      }
-  ]
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
